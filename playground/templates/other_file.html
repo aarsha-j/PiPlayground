@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <div class="abme">
+     <h1>About me</h1>
+
+     <div class="zoom" id="lang">
+      <ul>
+        <h2>Spoken Languages: </h2>
+        {% for i in languages %}
+        <li>{{i}}</li>
+        {% endfor %}
+      </ul>
+      </div>
+
+      <div class="zoom">
+        <ul>
+          <h2>Songs that live rent free in my head: </h2>
+          {% for i in music %}
+          <li>{{i}}</li>
+          {% endfor %}
+      </ul>
+      </div>
+      <div class="zoom">
+        <ul>
+          <h2>Sports: </h2>
+          {% for i in sports %}
+          <li>{{i}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="zoom">
+        <ul>
+          <h2>Programming Languages: </h2>
+          {% for i in code %}
+          <li>{{i}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+  </body>
+</html> 
